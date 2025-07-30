@@ -1,0 +1,105 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(107, 230, 213);
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+main {
+    padding: 5%;
+}
+
+section {
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2em;
+    animation: moveAndChangeColor 3s infinite;
+    text-align: center;
+    display: block;
+    
+}
+
+@keyframes moveAndChangeColor {
+    
+    0% {
+        transform: translateY(0);
+        color: #562fe4; /* Color inicial */
+    
+    }
+    50% {
+        transform: translateY(-20px); /* Mueve hacia arriba */
+        color: #310485; /* Color intermedio */
+    }
+    100% {
+        transform: translateY(0);
+        color: #0086df; /* Regresa al color inicial */
+    }
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 2.5em; /* Ajusta el tamaño de la letra del párrafo */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+h3 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #3f7df1; /* Color del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.item {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interior */
+    margin: 10px 0; /* Espacio entre los elementos */
+    font-size: 1.5em; /* Tamaño de la letra de los elementos */
+    transition: transform 0.3s; /* Efecto de transición */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 2.5em;
+    }
+    h2 {
+        display: none; /* Oculta el título en pantallas pequeñas */
+    }
+    p {
+        font-size: 2em; /* Tamaño reducido en pantallas medianas */
+    }
+
+    h3 {
+        font-size: 2em; /* Tamaño reducido en pantallas medianas */
+    }
+
+    .item {
+        font-size: 1.2em; /* Tamaño reducido en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em; /* Tamaño aún más reducido en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 1.5em; /* Tamaño aún más reducido en pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 1.5em; /* Tamaño aún más reducido en pantallas pequeñas */
+    }
+
+    .item {
+        font-size: 1em; /* Tamaño aún más reducido en pantallas pequeñas */
+    }
+}

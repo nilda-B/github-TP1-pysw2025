@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloC.css">
+    <title>Mi Primer Pagina</title>
+</head>
+<body>
+    <!--inicio de cabecera de la pagine-->
+<header id="main-header"> 
+    <a href="#" id="logo-header">
+        <span class="site-name">Bautista Nilda</span>
+        <span class="site-desc">Diseño Web PySW/HTML-CSS</span> 
+    </a>
+    <nav> <!-- Barra de navegación -->
+        <input type="checkbox" id="check"> 
+        <label for="check" class="checkbtn">
+            ☰<!--ICONO DE MENU-->
+        </label>
+        <ul> <!-- Lista de enlaces de navegación -->
+            <li><a href="index.html">Inicio</a></li> 
+            <li><a href="contacto.html">Contacto</a></li> 
+            <li><a href="acerca de..html">Acerca De</a></li> 
+        </ul>
+    </nav>
+</header>
+    <!-- fin de cabesera de la pagina -->
+
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Corre Electronico</label>
+                <input type="text" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea type="text" id="mensaje" name="mensaje"  rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer id="main-footer">
+        <p>
+            &copy; 2025 <a href="httpps://www.facebook.com"
+            target="_black">Diseño Web - PySW-UNJU-LQ</a>
+        </p>
+    </footer>
+</body>
+</html>

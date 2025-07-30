@@ -1,0 +1,49 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    
+}
+.container{
+    max-width: 600px;
+    margin: 80px auto 0 auto;
+    padding: 80px;
+    background-color: aqua;
+    box-shadow: 0 10px 10px gray;
+    }
+
+/* grupo de formulario*/
+.form-group {
+    margin-bottom: 30px;
+}
+label{
+    font-weight: bold;
+}
+input[type="text"],
+textarea{
+    width:  100%;
+    padding: 10px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]:hover {
+    background-color: blueviolet;
+}
+/* inicio de estilo de pie de pagina*/
+#main-footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding:  20px;
+    margin-top: 40px;
+}
+#main-footer p{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+#main-footer a {
+    color: white;
+}
